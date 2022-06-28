@@ -33,8 +33,8 @@
 /* Медиа запрос: для экранов с шириной ДО 960px */
 @media (max-width: 959px) {
     .hero {
-        width: 100%;
-        height: 60vh;
+              width: 100%;
+              height: 60vh;
     }
 
     /* Выпадающее меню */
@@ -44,11 +44,11 @@
 		position: absolute;
 		top: 55px;
 		left: 0;
-        text-align: center;
-        align-items: center;
+                text-align: center;
+                align-items: center;
 		background-color: rgba(129, 115, 115);
 		width: 100%;
-        height: 450px;
+                height: 450px;
 		transition: all 0.5s ease;
 		left: -100%;
 	}
@@ -63,10 +63,10 @@
 
 	.header__menu li {
 		margin: 10px auto;
-        padding-bottom: 10px;
-        padding-top: 10px;
+                padding-bottom: 10px;
+                padding-top: 10px;
 		font-size: 18px;
-        border-bottom: 2px solid black;
+                border-bottom: 2px solid black;
         width: 120px; 
 	}
 
