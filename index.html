@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +8,33 @@
     <link rel="stylesheet" href="./css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <!-- header -->
-    <header class="header" id="header">
-        <div class="container header__container">
-            <div class="menu-burger__header">
-                <span></span>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                Web Projects
             </div>
-            <nav class="header__nav">
-                <ul class="menu header__menu">
-                    <li><a href="#header" class="menu__item">Главная</a></li>
-                    <li><a href="" class="menu__item">Товары</a></li>
-                    <li><a href="" class="menu__item">Акции</a></li>
-                    <li><a href="" class="menu__item">Новинки</a></li>
-                    <li><a href="" class="menu__item">Доставка</a></li>
-                    <li><a href="#footer" class="menu__item">Контакты</a></li>
+            <nav>
+                <ul class="header-navigation">
+                    <li class="header-navigation__item"><a href="./index.html">главная</a></li>
+                    <li class="header-navigation__item"><a href="#">об авторе</a></li>
+                    <li class="header-navigation__item"><a href="#portfolio">проекты</a></li>
+                    <li class="header-navigation__item"><a href="#">комманда</a></li>
+                    <li class="header-navigation__item"><a href="#">процесс</a></li>
+                    <li class="header-navigation__item"><a href="tel:+7(496)768-32-39">контакты</a></li>
                 </ul>
-            </nav>
+            </nav>          
+            <span class="header-navigation__tel"><a href="tel:+7(496)768-32-39">+7 (496) 768-32-39</a></span>
+
+            <!-- burger-menu -->
+            <a class="burger-icon" href="#popup">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- // burger-menu -->
         </div>
     </header>
     <!-- // header -->
@@ -49,7 +56,7 @@
                 <!-- portfolio-cards-wrapper -->
                 <div class="portfolio-cards-wrapper">
 
-                    <!-- Card -->
+                    <!-- Card-1 -->
                     <div class="card">
                         <a href="./projects/project1.html" class="card-link">
                             <img class="card-img"
@@ -59,7 +66,7 @@
                             <p>Верстка многостраничного сайта.</p>
                         </a>
                     </div>
-                    <!-- // Card -->
+                    <!-- // Card-2 -->
 
                     <!-- Card -->
                     <div class="card">
@@ -71,7 +78,7 @@
                             <p>Верстка адаптивного лендинга.</p>
                         </a>
                     </div>
-                    <!-- // Card -->
+                    <!-- // Card-3 -->
 
                     <!-- Card -->
                     <div class="card">
@@ -83,13 +90,13 @@
                             <p>Верстка личного сайта.</p>
                         </a>
                     </div>
-                    <!-- // Card -->
+                    <!-- // Card-4 -->
 
                     <!-- Card -->
                     <div class="card">
                         <a href="./projects/project4.html" class="card-link">
                             <img class="card-img"
-                                src="https://images.unsplash.com/photo-1504608245011-62d9758c1bb9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                src="https://images.unsplash.com/photo-1507764923504-cd90bf7da772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
                                 alt="Многостраничный сайт">
                             <h3 class="card-title">Интернет магазин</h3>
                             <p>Верстка интернет магазина.</p>
@@ -117,15 +124,33 @@
                 <!-- // footer-copyright -->
 
                 <div class="footer-сontacts">
-                    <div class="footer-copyright-mail">Оставляйте заявки на электронной почте <br> <a href="mailto:mail@yandex.ru">email@mail.ru</a></div>
+                    <div class="footer-copyright-mail">Оставляйте заявки на электронной почте <br> <a
+                            href="mailto:mail@yandex.ru">email@mail.ru</a></div>
                     <div class="footer-copyright-tel">Делайте заказы по телефону <br> <a href="tel:+79681234567">+7 999-123-4567</a></div>
                 </div>
             </div>
-        </div>  
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="./js/menu.js"></script>
+    <!-- Модальное окно -->
+    <div class="mobile-container" id="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="header-mobile">
+            <a href="" class="close-icon">
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="mobile-list">
+                <li><a href="#hero" class="mobile-list__item">главная</a></li>
+                <li><a href="" class="mobile-list__item">об авторе</a></li>
+                <li><a href="#portfolio" class="mobile-list__item">проекты</a></li>
+                <li><a href="" class="mobile-list__item">комманда</a></li>
+                <li><a href="" class="mobile-list__item">процесс</a></li>
+                <li><a href="#footer" class="mobile-list__item">контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- // Модальное окно -->
 
 </body>
 
